@@ -1,7 +1,24 @@
 const character = "Donia";
+let age = 30;
+let isBlackBelt = false;
 
-console.log(character);
 
-const inputs = document.querySelectorAll("input");
+// character = 20;
+character = "Marwa"
+// age="Jiji" //error
+ 
+age = 21;
 
-console.log(inputs);
+// isBlackBelt = "yes"; //error
+isBlackBelt = true;
+
+
+//just we can change the values not the types !
+
+
+const circ = (diameter :number) => {
+    return diameter * Math.PI;
+}
+
+console.log(circ(7.5));
+
