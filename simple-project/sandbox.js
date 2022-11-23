@@ -1,25 +1,15 @@
-//explicit types
-var character;
-var age;
-var isLoggedIn;
-// age="jiji";
-age = 20;
-isLoggedIn = true;
-//Arrays
-var array;
-// array = ['Donia', 'Marwa'];
-array.push('Marwa');
-//Union types
+var age = 25;
+age = true;
+console.log(age);
+age = "hello";
+console.log(age);
+age = { name: "Donia" };
+console.log(age);
 var mixed = [];
-mixed.push('hello');
-mixed.push(20);
+mixed.push('jiji');
 mixed.push(false);
+mixed.push(5);
 console.log(mixed);
-var uid;
-uid = '123';
-uid = 123;
-//objects
-var person1;
-person1 = { name: 'Donia', age: 30 };
-var person2;
-person2 = { name: 'Donia', age: 20, beltColour: 'black' };
+var person;
+person = { name: 'Donia', age: 20 };
+console.log(person);
