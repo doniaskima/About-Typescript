@@ -1,42 +1,24 @@
-const character = "Donia";
-let age = 30;
-let isBlackBelt = false;
+//explicit types
 
+let character: string;
+let age: number;
+let isLoggedIn: boolean;
 
-//arrays
+// age="jiji";
 
-let names = ['Donia', 'jiji', 'Marwa'];
-names.push('Islem');
-// names.push(3); //error
+age = 20;
+isLoggedIn = true;
 
-let numbers = [10, 20, 30, 40];
+//Arrays
 
-numbers.push(25);
-// number.push('Donia')
-// numbers[1]='Donia'
+let array: string[];
+// array = ['Donia', 'Marwa'];
+array.push('Marwa');
 
-let mixed = ['Ken', 4, 'Donia', 8, 9];
+//Union types
 
-mixed.push('Sirine');
-mixed.push(5);
-mixed[0] = 3;
-
-
-//Objects 
-
-let cuteGirl = {
-    name: 'Donia',
-    belt: 'black',
-    age: 20
-};
-
-cuteGirl.age = 21;
-cuteGirl.name = "Don"
-cuteGirl.skills = ["writing", "reading"];
-cuteGirl = {
-    name: 'Doniaaa',
-    belt: 'orangee',
-    age: 20,
-    skills: ['idk']
-}
-
+let mixed: (string | number |boolean)[] = [];
+mixed.push('hello');
+mixed.push(20);
+mixed.push(false);
+console.log(mixed);
