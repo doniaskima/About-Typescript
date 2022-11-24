@@ -1,5 +1,21 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const me = {
+    name: "Donia",
+    age: 20,
+    speak(text) {
+        console.log(text);
+    },
+    spend(amount) {
+        console.log('I spent', amount);
+        return amount;
+    },
+};
+const greetPerson = (person) => {
+    console.log('hello', person.name);
+};
+greetPerson(me);
+console.log(me);
 const Invoice_js_1 = require("./classes/Invoice.js");
 // const anchor = document.querySelector('a')!;
 // console.log(anchor.href);
