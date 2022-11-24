@@ -1,23 +1,11 @@
+import {Invoice } from './classes/Invoice.js'
 // const anchor = document.querySelector('a')!;
 // console.log(anchor.href);
 // const form = document.querySelector('form')!;
 // console.log(form);
 
 //Classes
-class Invoice{
-//    readonly client: string;
-//     private details: string;
-//     public amount: number;
-
-    constructor(readonly client: string,
-        private details: string,
-        public amount: number,) {
-    }
-
-    format() {
-        return `${this.client} owes ${this.amount} for ${this.details}`;
-    }
-}
+ 
 const invOne = new Invoice("Donia", "learning ts", 383);
 const invTwo = new Invoice("sirine", "learning ts", 383);
 

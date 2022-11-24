@@ -1,24 +1,13 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Invoice_js_1 = require("./classes/Invoice.js");
 // const anchor = document.querySelector('a')!;
 // console.log(anchor.href);
 // const form = document.querySelector('form')!;
 // console.log(form);
 //Classes
-class Invoice {
-    //    readonly client: string;
-    //     private details: string;
-    //     public amount: number;
-    constructor(client, details, amount) {
-        this.client = client;
-        this.details = details;
-        this.amount = amount;
-    }
-    format() {
-        return `${this.client} owes ${this.amount} for ${this.details}`;
-    }
-}
-const invOne = new Invoice("Donia", "learning ts", 383);
-const invTwo = new Invoice("sirine", "learning ts", 383);
+const invOne = new Invoice_js_1.Invoice("Donia", "learning ts", 383);
+const invTwo = new Invoice_js_1.Invoice("sirine", "learning ts", 383);
 console.log(invOne, invTwo);
 let invoices = [];
 const form = document.querySelector(".new-item-form");
