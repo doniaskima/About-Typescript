@@ -36,3 +36,7 @@ var Direction2;
 })(Direction2 || (Direction2 = {}));
 console.log(Direction1.Up); //1
 console.log(Direction2.left); //Left
+const user = {
+    id: 1,
+    name: "John",
+};
