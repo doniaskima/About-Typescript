@@ -1,5 +1,5 @@
 import { Invoice } from './classes/Invoice.js';
-import { Payment } from './classes/Payment.js';
+import { Payment } from './classes/Payement.js';
 import { ListTemplate } from './classes/ListTemplate.js';
 const form = document.querySelector('.new-item-form');
 console.log(form.children);
