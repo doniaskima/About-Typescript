@@ -32,7 +32,7 @@
 import { Invoice } from './classes/Invoice.js';
 import { Payement } from "./classes/Payement.js";
 import { HasFormatter } from "./interfaces/HasFormatter.js";
-
+import {ListTemplate} from "./classes/ListTemplates.js";
 
 // let docOne: HasFormatter;
 // let docTwo: HasFormatter;
@@ -68,6 +68,16 @@ const tofrom = document.querySelector('#tofrom') as HTMLInputElement;
 const details = document.querySelector('#details') as HTMLInputElement;
 const amount = document.querySelector('#amount') as HTMLInputElement;
 
+
+//list template instance
+
+const ul = document.querySelector('ul')!;
+const list = new ListTemplate(ul);
+
+
+
+
+
 form.addEventListener('submit', (e: Event) => {
   e.preventDefault();
 
@@ -77,5 +87,8 @@ form.addEventListener('submit', (e: Event) => {
   } else {
     doc = new Payement(tofrom.value, details.value, amount.valueAsNumber);
   }
-  console.log(doc);
+    console.log(doc);
+    
+
+    list.render(doc,type.value,'end');
 });
