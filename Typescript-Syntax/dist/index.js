@@ -40,3 +40,7 @@ const user = {
     id: 1,
     name: "John",
 };
+//Type Assertion
+let cid = 1;
+// let customerId=<number>cid
+let customerId = cid;
