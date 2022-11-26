@@ -56,7 +56,7 @@ type User = {
 
 const user: User = {
     id: 1,
-    name: "John",
+    name: "Donia",
     
 }
 
@@ -78,3 +78,26 @@ function log(message: string | number):void {
     console.log(message);
 }
 
+//Interfaces
+
+interface UserInterface  {
+    readonly id: number,
+    name: string, 
+    age?:number//optional
+}
+
+const user1: UserInterface = {
+    id: 1,
+    name: "Donia",
+    
+}
+
+// user1.id = 4; error
+
+interface MathFunc{
+    (x: number, y: number):number
+}
+
+
+const add: MathFunc = (x: number, y: number): number => x + y;
+const sub: MathFunc = (x: number, y: number): number => x - y;

@@ -38,7 +38,7 @@ console.log(Direction1.Up); //1
 console.log(Direction2.left); //Left
 const user = {
     id: 1,
-    name: "John",
+    name: "Donia",
 };
 //Type Assertion
 let cid = 1;
@@ -52,3 +52,9 @@ console.log(addNum(2, 3));
 function log(message) {
     console.log(message);
 }
+const user1 = {
+    id: 1,
+    name: "Donia",
+};
+const add = (x, y) => x + y;
+const sub = (x, y) => x - y;
