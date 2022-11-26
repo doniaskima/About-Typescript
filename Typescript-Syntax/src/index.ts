@@ -122,3 +122,25 @@ const Jihen = new Person(2, "Jihen");
 
 console.log(Donia.register());
 console.log(Donia, Jihen);
+
+
+//implement Interface in Class
+interface PersonInterface  {
+    id: number,
+    name: string, 
+    register(): string;
+   
+}
+
+class Personn implements PersonInterface{
+    id: number
+    name: string
+
+    constructor(id:number,name:string) {
+        this.id = id;
+        this.name = name;
+    }
+    register() {
+        return `${this.name} is now registered`
+    }
+}
