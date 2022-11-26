@@ -101,3 +101,21 @@ interface MathFunc{
 
 const add: MathFunc = (x: number, y: number): number => x + y;
 const sub: MathFunc = (x: number, y: number): number => x - y;
+
+
+//Classes
+class Person{
+    id: number
+    name: string
+
+    constructor(id:number,name:string) {
+        this.id = id;
+        this.name = name;
+    }
+}
+
+const Donia = new Person(1,"Donia");
+const Jihen = new Person(2, "Jihen");
+
+
+console.log(Donia, Jihen);

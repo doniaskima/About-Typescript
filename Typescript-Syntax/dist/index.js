@@ -58,3 +58,13 @@ const user1 = {
 };
 const add = (x, y) => x + y;
 const sub = (x, y) => x - y;
+//Classes
+class Person {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+}
+const Donia = new Person(1, "Donia");
+const Jihen = new Person(2, "Jihen");
+console.log(Donia, Jihen);
