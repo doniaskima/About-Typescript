@@ -144,3 +144,19 @@ class Personn implements PersonInterface{
         return `${this.name} is now registered`
     }
 }
+
+//Extending Classes
+
+
+class Employee extends Person{
+    position: string
+    
+    constructor(id:number, name:string,position:string) {
+        super(id, name);
+        this.position=position;
+    }
+}
+
+const emp = new Employee(2, "Marwa", "Student");
+console.log(emp.name);
+console.log(emp.register());
