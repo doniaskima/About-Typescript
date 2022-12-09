@@ -7,9 +7,9 @@ export interface Mappable {
     };
     markerContent(): string;
     color: string;
-  }
+}
   
-  export class Map {
+export class Map {
     private googleMap: google.maps.Map;
   
     constructor(htmlId: string) {
@@ -39,4 +39,4 @@ export interface Mappable {
         infoWindow.open(this.googleMap, marker);
       });
     }
-  }
+}
