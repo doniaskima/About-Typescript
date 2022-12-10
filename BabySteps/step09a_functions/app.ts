@@ -15,10 +15,14 @@ let myAdd1 = function (x: number, y: number): number {
 let myadd2: (x: number, y: number) => number = function (x: number, y: number): number{
     return x + y;
 }
+
+
 //type names dont matter
 let myAdd3: (baseValue:number, increment:number)=>number = 	function(x: number, y: number): number { 
     return x+y; 
 };
+
+
 //Lambda functions															
 let myAdd4 = (a : number, b : number) => a + b;
 //output will be: var myAdd4 = function(a : number, b : number) {return a + b};
