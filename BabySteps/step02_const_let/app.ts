@@ -7,7 +7,6 @@ const c = "best";
 //I suggest use let instead of var everywhere,
 //because let has blocked scrope
 
-
 if (true) {
     let z = 4;
     //use z:
